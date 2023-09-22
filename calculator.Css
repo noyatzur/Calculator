@@ -1,0 +1,104 @@
+body
+{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    flex-direction: column;
+}
+
+button
+{
+    background-color: rgb(255, 240, 240);
+    border: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.centerFlex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calculator
+{
+    height: 700px;
+    width: 400px;
+    background-color: rgb(139, 0, 69);
+    border-radius: 15px;
+}
+.topContainer
+{
+    
+    height: 14%;
+    width: 95%;
+    font-size:10px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.middelContainer
+{
+    height: 50%;
+    width: 100%;
+    
+}
+
+.bottomContainer
+{
+    height: 30%;
+    width: 100%;
+}
+
+.bnum
+{
+    width: 30%;
+    font-size: 2em;
+    padding: 5px;
+    margin-top: 1%;
+}
+
+.bnum1
+{
+   width: 44%;
+   font-size: 2em;
+   padding: 5px;
+   margin-left: 1%;
+}
+.bnum2
+{
+    width: 70%;
+    font-size: 2em;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+.bnum3
+{
+    width: 40%;
+    font-size: 2em;
+    padding: 5px;
+    margin-right: 2%;
+
+}
+
+.container
+{
+    border: 1.5px solid white;
+    
+}
+.container1
+{
+    width: 17em;
+    border-color: black;
+    height:8vh;
+    border: 1px;
+}
+
+
+
