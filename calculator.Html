@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +10,68 @@
     <title>Document</title>
 </head>
 
+
 <body class="centerFlex">
     <div class="centerFlex calculator">
         <div class=" centerFlex topContainer" >
-            <div class="container1" ></div>
-            
+            <div class=" centerFlex container1" >
+                <label id="targil"> </label>
+            </div>
+            <div style="height: 50%; width: 96%; display: flex; margin: auto;margin-top: 5px;">
+                <div class="container2">
+                    <label  id="res"> 0 </label>
+                </div>
+                <div class="container3">
+                    <label id="op"></label>
+                </div>
+            </div>
+           
+
+
         </div>
        
        
         <div class=" middelContainer" style="margin-left: 10%;">
-            <button class="bnum">C</button>
-            <button class="bnum">CE</button>
-            <button class="bnum"><<<</button>
+            <button class="bnum" onclick="" id="buttonC">C</button>
+            <button class="bnum" onclick="" id="buttonCE">CE</button>
+            <button class="bnum" onclick="" id="buttonBack"><<<</button>
             <br>
             <br>
-            <button class="bnum"> 1 </button>
-            <button class="bnum"> 2 </button>
-            <button class="bnum"> 3</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)"> 1 </button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 2 </button>
+            <button class="bnum" onclick="setResult(event.target.innerText)"> 3</button>
             <br>
             <br>
-            <button class="bnum"> 4</button>
-            <button class="bnum"> 5</button>
-            <button class="bnum"> 6</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 4</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 5</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)"> 6</button>
             <br>
             <br>
-            <button class="bnum"> 7</button>
-            <button class="bnum"> 8</button>
-            <button class="bnum"> 9</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 7</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 8</button>
+            <button class="bnum" onclick="setResult(event.target.innerText)" > 9</button>
             <br>
             <br>
-            <button class="bnum1"> .</button> 
-            <button class="bnum1"> 0</button>
+            <button class="bnum1" onclick= "setResult (event.target.innerText)"> .</button>
+            <button class="bnum1" onclick="setResult(event.target.innerText)"> 0</button>
+
 
         </div>
         <div class=" bottomContainer" style="margin-left: 20%;">
-            <button class="bnum3"> +</button>
-            <button class="bnum3"> -</button>
+            <button class="bnum3" onclick= "setOp(event.target.innerText)" > +</button>
+            <button class="bnum3" onclick="setOp(event.target.innerText)" > -</button>
             <br>
             <br>
-            <button class="bnum3"> /</button>
-            <button class="bnum3"> *</button>
+            <button class="bnum3" onclick="setOp(event.target.innerText)" > /</button>
+            <button class="bnum3" onclick="setOp(event.target.innerText)"> *</button>
             <br>
             <br>
-            <button class="bnum2"> =</button>
+            <button class="bnum2" onclick=  "setTotal()" > =</button>
         </div>
     </div>
 
+
 </body>
+
 
 </html>
